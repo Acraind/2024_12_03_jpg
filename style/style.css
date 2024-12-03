@@ -1,3 +1,25 @@
 div{
     border:1px solid black;
 }
+
+body{
+    background-color: grey;
+    color:white;
+}
+#header{
+    color:orange;
+}
+/* Si on veut un nom en deux parties : header-coucou plutôt que header coucou ou header_coucou */
+/* header coucou : veut dire que header est dans coucou ou l'inverse */
+#footer{
+    position:absolute;
+    /* Sa position ne dépend pas de ce qui le précède */
+    bottom:2px;
+    text-align:center;
+    width:90%;
+    left:5%;
+
+}
+.bold{
+    font-weight:900;
+}
