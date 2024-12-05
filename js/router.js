@@ -6,7 +6,7 @@ var routes = [
   },
   {
     name: "Editor",
-    path: /^\/edit((\/)|(\/(?<id>d+)))?$/,
+    path: /^\/edit((\/)|(\/(?<id>\d+)))?$/,
     url: "/pages/editor/editor.html",
     loaderJs: loadEditor,
   },
@@ -40,13 +40,12 @@ function Router(rootNode) {
     history.pushState(null, null, pathName);
     var m;
     var route = routes.find((r) => {
-      m = r.path === pathName;
+      m = r.path.exec(pathName);
       return m !== null;
     });
     if (undefined !== route) {
       route.params = m.groups;
     }
-
     route.pathName = pathName;
     currentRoute = route;
   }
@@ -71,7 +70,7 @@ function Router(rootNode) {
         console.log("erreur" + xhr.status);
         return;
       }
-      console.log(xhr.responseText);
+      //console.log(xhr.responseText);
       routeObject.template = xhr.responseText;
       loadContentInPage(routeObject);
     };
