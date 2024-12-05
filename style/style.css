@@ -1,27 +1,71 @@
-/* S'entrainer aux sélecteurs : Select the plates, flukeout.github.io */
-/* CSS turtle - mettre la grenouille sur le nénuphar */
-div{
-    border:1px solid black;
+#js-notification {
+  font-size: xx-large;
+  font-weight: 900;
+  background-color: tomato;
+  color: white;
+  text-align: center;
+  padding: 0 10px;
 }
 
-body{
-    background-color: grey;
-    color:white;
+body {
+  height: 83.5vh;
 }
-#header{
-    color:orange;
+#footer {
+  position: fixed;
+  bottom: 2px;
+  text-align: center;
+  width: 90%;
+  left: 5%;
+  right: 5%;
+  z-index: 100;
 }
-/* Si on veut un nom en deux parties : header-coucou plutôt que header coucou ou header_coucou */
-/* header coucou : veut dire que header est dans coucou ou l'inverse */
-#footer{
-    position:absolute;
-    /* Sa position ne dépend pas de ce qui le précède */
-    bottom:2px;
-    text-align:center;
-    width:90%;
-    left:5%;
+#header {
+  font-size: 25px;
+  padding: 15px;
+  font-weight: 900;
+  color: tomato;
+  text-decoration: underline grey;
+}
+#dot {
+  color: black;
+}
+#js {
+  color: skyblue;
+  font-style: italic;
+}
+#wrapper {
+  height: 100%;
+}
+#editor {
+  height: 100%;
+  display: flex;
+  text-align: center;
+}
 
+#editor > div:nth-child(1) {
+  flex-grow: 1;
 }
-.bold{
-    font-weight:900;
+#editor > div {
+  padding: 5px 15px;
+}
+#editor > div:nth-child(2) {
+  min-width: 200px;
+  border-left: 1px solid black;
+}
+div.cols {
+  display: flex;
+  justify-content: space-between;
+}
+div.cols > div {
+  width: 49%;
+  text-align: center;
+}
+div.cols > div input {
+  width: 80px;
+  text-align: center;
+}
+@media print {
+  #editor-right, #navbar {
+    display: none;
+  }
 }

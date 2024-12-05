@@ -1,14 +1,16 @@
 {
-  "name": "2024_12_03_jpg",
+  "name": "2024-12-02-jpg",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "lite-server"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "lite-server": "2.6.1"
+    "bootstrap": "5.3.3",
+    "lite-server": "^2.6.1"
   }
 }

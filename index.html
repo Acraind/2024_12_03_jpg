@@ -1,18 +1,52 @@
-<!-- Learngit branching : permet de s'entrainer sur git -->
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <link rel="stylesheet" href="style/style.css"> <!--link:css-->
-    <meta charset="UTF-8"> 
-    <!-- Mettre en commentaire rapidement "Ctrl + :"  -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <div id ="header" class ="bold">Header</div>
-    <div id="navbar">Navbar</div>
-    <div id="wrapper">wrapper</div>
-    <div id="footer" class ="bold blue">Frédéric REN, 2024</div>
-    <!-- Même si la class n'existe pas dans le .css, on peut référer une class -->
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formation Javascript</title>
+    <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <link rel="stylesheet" href="/style/style.css" />
+  </head>
+  <body>
+    <div id="js-notification">JS non chargé dans la page</div>
+    <div id="header">
+      Meme<span id="dot">.</span><span id="js">js</span>
+      <button class="btn btn-danger">clickez moi</button>
+    </div>
+    <div id="navbar">
+      <nav
+        class="navbar navbar-expand-sm navbar-dark bg-dark"
+        data-bs-theme="dark"
+      >
+        <div class="container">
+          <a class="navbar-brand active" href="/">Home</a>
+          <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="/thumbnail" aria-current="page"
+                  >Thumbnail</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/edit">New</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/edit/1">Edit id:1</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div id="wrapper">
+     
+    </div>
+    <div id="footer">Copyright &copy; DESORBAIX 2024</div>
+    <script src="/js/editor.js"></script>
+    <script src="/js/router.js"></script>
+    <script src="/js/index.js"></script>
+  </body>
 </html>
