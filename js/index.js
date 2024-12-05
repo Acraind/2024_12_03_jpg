@@ -26,4 +26,4 @@ function loadNavbarEvents() {
   });
 }
 document.addEventListener("DOMContentLoaded", loadingDOM);
-var router=new Router(document.getElementById('wrapper'));
+var router = new Router(document.getElementById("wrapper"));
